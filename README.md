@@ -1,4 +1,4 @@
-# Anecdotes - Backend Exercise - by Eran Litvak
+# Evidence Parser
 Implements a simple service that asynchronously receives "events" with "evidence" objects in the format of JSON and knows how to convert them into a structured table based on
 configuration.
 
@@ -7,17 +7,16 @@ configuration.
 - Install the requirements from requirements.txt
 - Run the application with: ```uvicorn main:app```
 - Go to:
+  - http://127.0.0.1:8000 - application
+  - http://127.0.0.1:8000/docs - documentation
+  - http://127.0.0.1:8000/redoc - alternative documentation
 
-http://127.0.0.1:8000 - app
-http://127.0.0.1:8000/docs - documentation
-http://127.0.0.1:8000/redoc - alternative documentation
-
-## App Folders
-- main.py: Implements FastAPI, a modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints.
-- routes: Implements the 'evidence/upload' route for uploading a JSON file containing evidence
-- payloads: Sample evidence JSON files (just for testing)
-- parsers: Implements the evidence parser for switching between different evidence types
-- models: Implements pydantic model for each evidence type (generated automatically by using https://jsontopydantic.com/)
+## App Structure
+- **main.py**: Implements FastAPI, a modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints.
+- **routes**: Implements the 'evidence/upload' route for uploading a JSON file containing evidence
+- **payloads**: Sample evidence JSON files (just for testing)
+- **parsers**: Implements the evidence parser for switching between different evidence types
+- **models**: Implements pydantic model for each evidence type (generated automatically by using https://jsontopydantic.com/)
 
 ## Test Evidence Parser
 - Go to: http://127.0.0.1:8000/docs
