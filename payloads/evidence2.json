@@ -1,0 +1,42 @@
+{
+    "evidence_id": 2,
+    "evidence_data": [{
+            "login_name": "anecdotes-exercise3",
+            "role": "owner",
+            "user_details": {
+                "updated_at": "2022-03-26T09:41:56Z",
+                "id": 140560,
+                "email": "exercise@anecdotes.ai",
+                "full_name": "anec dotes"
+            },
+            "security": {
+                "mfa_enabled": true,
+                "mfa_enforced": true
+            },
+            "location": {
+                "country": "Israel",
+                "state": null,
+                "city": "Tel Aviv"
+            }
+        },
+        {
+            "login_name": "anecdotes-exercise4",
+            "role": "employee",
+            "user_details": {
+                "updated_at": "2022-01-26T09:41:56Z",
+                "id": 140560,
+                "email": "exercise@anecdotes.ai",
+                "full_name": "anec dotes"
+            },
+            "security": {
+                "mfa_enabled": true,
+                "mfa_enforced": true
+            },
+            "location": {
+                "country": "United States",
+                "state": "CA",
+                "city": "Los Angeles"
+            }
+        }
+    ]
+}
